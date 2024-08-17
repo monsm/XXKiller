@@ -6,5 +6,5 @@
          "type":"adblock"
       } 
 	],
-    "transformations": ["RemoveModifiers","Compress","Validate"]
+    "transformations": ["Validate","RemoveModifiers","Compress","RemoveComments","Deduplicate","RemoveEmptyLines","TrimLines"]
 }
