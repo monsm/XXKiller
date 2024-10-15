@@ -23,9 +23,9 @@ if %isproxy%==1 set http_proxy=%httproxy%
 if %isproxy%==1 set https_proxy=%httproxy%
 
 ::get binaries
-curl %curlFix%%curlproxy% --url https://raw.githubusercontent.com/DoingDog/DoingDog/main/wget.exe -o wget.exe
-curl %curlFix%%curlproxy% --url https://raw.githubusercontent.com/DoingDog/DoingDog/main/busybox.exe -o busybox.exe
-curl %curlFix%%curlproxy% --url https://raw.githubusercontent.com/DoingDog/DoingDog/main/FOP.py -o FOP.py
+curl %curlFix%%curlproxy% --url https://raw.githubusercontent.com/monsm/DoingDog/main/wget.exe -o wget.exe
+curl %curlFix%%curlproxy% --url https://raw.githubusercontent.com/monsm/DoingDog/main/busybox.exe -o busybox.exe
+curl %curlFix%%curlproxy% --url https://raw.githubusercontent.com/monsm/DoingDog/main/FOP.py -o FOP.py
 if not exist .\wget.exe (
 del /f /q *.exe>nul 2>nul
 del /f /q *.py>nul 2>nul
