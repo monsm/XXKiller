@@ -1,0 +1,10 @@
+{
+   "name":"tmp",
+   "sources":[
+      {	      
+      	 "source": "g.txt",
+         "type":"adblock"
+      } 
+	],
+    "transformations": ["TrimLines","RemoveEmptyLines","RemoveComments","Deduplicate","Compress","Validate"]
+}

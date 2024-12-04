@@ -1,0 +1,10 @@
+{
+   "name":"tmp",
+   "sources":[
+      {	      
+      	 "source": "f.txt",
+         "type":"adblock"
+      } 
+	],
+    "transformations": ["Validate"]
+}
