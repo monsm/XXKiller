@@ -1,0 +1,16 @@
+!
+! Title: tmp
+! Last modified: 2025-03-10T18:27:01.518Z
+!
+! Compiled by @adguard/hostlist-compiler v1.0.38
+!
+! Title: XXKiller
+! Homepage: https://github.com/DoingDog/XXKiller
+! License: https://github.com/DoingDog/XXKiller/blob/mae/LICENSE
+! Expires: 25 hours (update frequency)
+! Description: Just a merged Adblock rule. Nothing more.
+! Merge source: https://github.com/DoingDog/XXKiller/blob/mae/RMaker/w/rule-list.ini
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Version: 202503110226
+! Last modified: 2025/03/11 2:26 (北京时间)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
