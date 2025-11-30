@@ -1,0 +1,6 @@
+!
+! Title: tmp
+! Last modified: 2025-11-30T08:27:17.668Z
+!
+! Compiled by @adguard/hostlist-compiler v1.0.39
+!
