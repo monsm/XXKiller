@@ -62,6 +62,7 @@ DOMAIN-KEYWORD,siri_ai,Proxy
 DOMAIN-KEYWORD,applellm,Proxy
 DOMAIN-KEYWORD,apple-llm,Proxy
 DOMAIN-KEYWORD,afm-cloud,Proxy
+DOMAIN-KEYWORD,apple,Proxy
 
 # ===== IP段兜底 =====
 IP-CIDR,17.0.0.0/8,Proxy
