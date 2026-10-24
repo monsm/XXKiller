@@ -1,0 +1,41 @@
+#!name= AppleAIProxy
+#!desc= Apple Intelligence 代理
+#!author= monsm
+[General]
+name = Apple Intelligence & Siri (Proxy)
+description = 将 Apple Intelligence、Siri 和私有云计算的请求通过 PROXY 规则路由。
+[Rule]
+# ========== Apple Intelligence 核心服务 ==========
+# Siri 请求路由（AI + 语音助手）
+DOMAIN-KEYWORD,siri,Proxy
+# Apple Intelligence 请求入口（设备侧连接到 Apple 服务器）
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,Proxy
+DOMAIN-SUFFIX,ls.apple.com,Proxy
+# Apple Intelligence 云端服务代理
+DOMAIN-SUFFIX,gateway.icloud.com,Proxy
+# ========== 域名掩码（DNS 加密/混淆）==========
+# Apple 使用域名掩码技术，将真实请求伪装成对 Apple DNS 的访问
+# 作用：绕过 DNS 污染、隐藏真实请求目标
+# Cloudflare CDN 代理节点
+DOMAIN-SUFFIX,cp4.cloudflare.com,Proxy
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,Proxy
+# Fastly CDN 代理节点
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,Proxy
+# Apple DNS API（掩码查询接口）
+DOMAIN-SUFFIX,mask.icloud.com,Proxy
+DOMAIN-SUFFIX,mask-h2.icloud.com,Proxy
+DOMAIN,mask-api.icloud.com,Proxy
+# Apple DNS 掩码专用域名（设备级连接）
+DOMAIN,mask-api.fe.apple-dns.net,Proxy
+DOMAIN,mask-t.apple-dns.net,Proxy
+DOMAIN,mask.apple-dns.net,Proxy
+# Apple 内部代理路由
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,Proxy
+DOMAIN-SUFFIX,apple-relay.apple.com,Proxy
+DOMAIN-SUFFIX,smoot.apple.com,Proxy
+# ========== 辅助资源 ==========
+# Apple Intelligence App UI / 资源下载
+DOMAIN-SUFFIX,apps.mzstatic.com,Proxy
+# ========== 系统级服务 ==========
+# Siri 本地唤醒服务（设备侧）
+DOMAIN,guzzoni.apple.com,Proxy
